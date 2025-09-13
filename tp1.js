@@ -1,11 +1,10 @@
-
 /*EJERCICIO I*/
 /*alert("Hola Mundo")*/
 
 /*EJERCICIO II*/
 //document.writeln("Hola Mundo")
 
-//EJERCICIO III 
+//EJERCICIO III
 //alert("El resultado de sumar 3 mas 5 es 8")
 
 //EJERCICIO IV
@@ -39,17 +38,13 @@ let mayor
 
 if (num1 > num2 && num1 > num3) {
 mayor = num1
-} else {
-mayor = num3
-if (num2 > num3) {
+} else if (num2 > num1 && num2 >num3) {
 mayor = num2
 } else {
 mayor = num3
 }
-}
 
-alert("El numero mayor es: " + mayor)*/
-
+alert("El numero mayor es: " + mayor)/*
 
 //EJERCICIO VIII
 /*const numero = parseInt(prompt("Ingresa un número:"));
@@ -109,54 +104,68 @@ if (letra10 === "a" || letra10 === "e" || letra10 === "i" || letra10 === "o" || 
 alert("Vocales encontradas: " + vocales)
 */
 
+// resuelto con for
+/*const frase = prompt("Ingresa una frase (hasta 10 caracteres):")
+let vocales = ""
+
+for (let i = 0; i < frase.length  < 10; i++) {
+  let letra = frase.charAt(i).toLowerCase()
+  if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u") {
+    vocales += letra
+  }
+}
+
+console.log("Vocales encontradas: " + vocales)*/
+
 //EJERCICIO X y XI
-/*const numero = parseInt(prompt("Ingresa un número:"))
-let mensaje = ""
-let ponerComa = false
-let cantidadDivisores = 0
+/*const numero = parseInt(prompt("Ingresa un número:"));
+let mensaje = "";
+let ponerComa = false;
+let cantidadDivisores = 0;
 
 if (numero % 2 === 0) {
-if (ponerComa) {
-mensaje += ", 2"
-} else {
-mensaje += "2"
-ponerComa = true
-}
-cantidadDivisores++
+  if (ponerComa) {
+    mensaje += ", 2";
+  } else {
+    mensaje += "2"; // mensaje = mensaje + "2"
+    ponerComa = true;
+    }
+    cantidadDivisores++; // cantidadDivisores = cantidadDedivisores + 1
 }
 if (numero % 3 === 0) {
-if (ponerComa) {
-mensaje += ", 3"
-} else {
-mensaje += "3"
-ponerComa = true
-}
-cantidadDivisores++
+  if (ponerComa) {
+    mensaje += ", 3";
+  } else {
+    mensaje += "3";
+    ponerComa = true;
+  }
+  cantidadDivisores++;
 }
 if (numero % 5 === 0) {
-if (ponerComa) {
-mensaje += ", 5"
-} else {
-mensaje += "5"
-ponerComa = true
-}
-cantidadDivisores++
+  if (ponerComa) {
+    mensaje += ", 5";
+  } else {
+    mensaje += "5";
+    ponerComa = true;
+  }
+  cantidadDivisores++;
 }
 if (numero % 7 === 0) {
-if (ponerComa) {
-mensaje += ", 7"
-} else {
-mensaje += "7"
-ponerComa = true
+  if (ponerComa) {
+    mensaje += ", 7";
+  } else {
+    mensaje += "7";
+    ponerComa = true;
+  }
+  cantidadDivisores++;
 }
-cantidadDivisores++
-}
+
 if (cantidadDivisores === 0) {
-alert("El número NO es divisible por 2, 3, 5 ni 7.")
+  alert("El número NO es divisible por 2, 3, 5 ni 7.");
 } else {
-if (cantidadDivisores === 1) {
-    alert("El número es divisible solo por: " + mensaje)
-} else {
-    alert("El número es divisible por: " + mensaje)
-}
+  if (cantidadDivisores === 1) {
+    alert("El número es divisible solo por: " + mensaje);
+  } else {
+    alert("El número es divisible por: " + mensaje);
+  }
 }*/

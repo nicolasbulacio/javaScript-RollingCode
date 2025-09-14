@@ -1,15 +1,15 @@
 function analizarCadena(cadena) {
 if (cadena === cadena.toUpperCase()) {
-    return "La cadena está formada solo por mayúsculas."
+    return "El texto está formado solo por mayúsculas."
 } else if (cadena === cadena.toLowerCase()) {
-    return "La cadena está formada solo por minúsculas."
+    return "El texto está formado solo por minúsculas."
 } else {
-    return "La cadena contiene una mezcla de mayúsculas y minúsculas."
+    return "El texto esta formado por una combinacion de mayúsculas y minúsculas."
 }
 }
 
 
-const texto = prompt("Ingresa una cadena de texto:")
+const texto = prompt("Ingresa un texto:")
 const resultado = analizarCadena(texto)
 
 document.writeln("<p>" + resultado + "</p>")

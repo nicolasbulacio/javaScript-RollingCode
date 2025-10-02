@@ -1,5 +1,5 @@
 class Persona {
-constructor(nombre, edad, sexo, peso, altura, añoNacimiento) {
+constructor(nombre, edad, sexo, peso, altura, annoNacimiento) {
     this.nombre = nombre
     this.edad = edad
     this.sexo = sexo
@@ -14,7 +14,7 @@ generaDNI() {
 }
 
 mostrarGeneracion() {
-    const año = this.annoNacimiento
+    const anno = this.annoNacimiento
 
 if (anno >= 1995 && anno <= 2012) {
     console.log("Generación Z - Rasgo característico: Irreverencia")
@@ -40,6 +40,7 @@ if (this.edad >= 18) {
 }
 }
 
+
 //MOSTRAR POR PANTALLA
 mostrarDatos() {
 const datos = `
@@ -49,7 +50,7 @@ const datos = `
     Sexo: ${this.sexo} <br>
     Peso: ${this.peso} kg<br>
     Altura: ${this.altura} m<br>
-    Año de nacimiento: ${this.añoNacimiento}<br><br>
+    Año de nacimiento: ${this.annoNacimiento}<br><br>
 `
 
 // MOSTRAR POR CONSOLA
@@ -65,3 +66,25 @@ console.log(`Año de nacimiento: ${this.annoNacimiento}`)
 document.writeln(datos)
 }
 }
+/*
+function crearPersona() {
+const nombre = prompt("Ingresa tu nombre:");
+const edad = parseInt(prompt("Ingresa tu edad:"));
+const sexo = prompt("Ingresa tu sexo (M/F):");
+const peso = parseFloat(prompt("Ingresa tu peso en kg:"));
+const altura = parseFloat(prompt("Ingresa tu altura en metros (ej: 1.75):"));
+const annoNacimiento = parseInt(prompt("Ingresa tu año de nacimiento:"));
+
+if (
+    !nombre || isNaN(edad) || !sexo || isNaN(peso) ||
+    isNaN(altura) || isNaN(annoNacimiento)
+) {
+    alert("Uno o más datos ingresados no son válidos. Intenta de nuevo.");
+    return;
+}
+
+const persona = new Persona(nombre, edad, sexo, peso, altura, annoNacimiento);
+
+alert("Persona creada con éxito. Revisa la consola para más detalles.");
+console.log(persona.mostrarDatos());
+}*/

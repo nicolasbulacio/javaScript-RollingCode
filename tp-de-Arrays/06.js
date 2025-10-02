@@ -12,9 +12,9 @@ let perimetro = calcularPerimetroRectangulo(ladoA, ladoB)
 documentWriteLn("El perímetro del rectángulo es: " + perimetro)
 
 // TRIANGULO
-/*let lado1 = parseFloat(prompt("Ingrese el valor del lado 1 del triángulo:"))
-let lado2 = parseFloat(prompt("Ingrese el valor del lado 2 del triángulo:"))
-let lado3 = parseFloat(prompt("Ingrese el valor del lado 3 del triángulo:"))
+/*let lado1 = parseInt(prompt("Ingrese el valor del lado 1 del triángulo:"))
+let lado2 = parseInt(prompt("Ingrese el valor del lado 2 del triángulo:"))
+let lado3 = parseInt(prompt("Ingrese el valor del lado 3 del triángulo:"))
 
 function trianguloValido(a, b, c) {
     return (a + b > c) && (a + c > b) && (b + c > a)

@@ -22,3 +22,5 @@ document.writeln(`<h2>Hobbies de ${persona.nombre}:</h2>`)
 for (let i = 0; i < persona.hobbies.length; i++) {
     document.writeln(`- ${persona.hobbies[i]}<br>`)
 }
+
+
